@@ -7,14 +7,17 @@
   
   <title>docker | 简单服务器知识</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="docker 容器 中的 php 安装 gd 库 报错 解决方法123RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/RUN docker-php-ext-install -j$(nproc) gdapt-get install -y libpng-dev">
+<meta property="og:type" content="website">
 <meta property="og:title" content="docker">
 <meta property="og:url" content="https://aarontong00.github.io/learn_server/docker/index.html">
 <meta property="og:site_name" content="简单服务器知识">
+<meta property="og:description" content="docker 容器 中的 php 安装 gd 库 报错 解决方法123RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/RUN docker-php-ext-install -j$(nproc) gdapt-get install -y libpng-dev">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-20T11:33:27.992Z">
+<meta property="og:updated_time" content="2018-09-20T11:45:09.114Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker">
+<meta name="twitter:description" content="docker 容器 中的 php 安装 gd 库 报错 解决方法123RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/RUN docker-php-ext-install -j$(nproc) gdapt-get install -y libpng-dev">
   
   
   
@@ -73,11 +76,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>docker 容器 中的 php 安装 gd 库 报错</p>
+<p>解决方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/</span><br><span class="line">RUN docker-php-ext-install -j$(nproc) gd</span><br><span class="line">apt-get install -y libpng-dev libjpeg-dev</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://aarontong00.github.io/learn_server/docker/index.html" data-id="cjmai04li0001twvgo28e29vk" class="article-share-link">Share</a>
+      <a data-url="https://aarontong00.github.io/learn_server/docker/index.html" data-id="cjmai3vx30001dgvgoy70xf2r" class="article-share-link">Share</a>
       
       
     </footer>
