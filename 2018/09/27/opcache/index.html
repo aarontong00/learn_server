@@ -5,19 +5,19 @@
   
 
   
-  <title>apache +MultiViews | 简单服务器知识</title>
+  <title>opcache | 简单服务器知识</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#####如果 访问  /index/index&amp;amp;t=1 #####没有 按照我们的伪静态规则 #####那么应该 是 MultiViews的问题 需要 改成 -MultiViews">
+  <meta name="description" content="iis 7.5 加 php7 开启opcache 后服务器会间断性出现 500 错误 ##解決 ###在windows下需要配置opcache.mmap_base = 0x20000000 ; (Windows only) fix OPcache crashes with event id 487 链接地址: https://stackoverflow.com/questions/35908029">
 <meta property="og:type" content="article">
-<meta property="og:title" content="apache +MultiViews">
-<meta property="og:url" content="https://aarontong00.github.io/learn_server/2018/09/21/apache-MultiViews/index.html">
+<meta property="og:title" content="opcache">
+<meta property="og:url" content="https://aarontong00.github.io/learn_server/2018/09/27/opcache/index.html">
 <meta property="og:site_name" content="简单服务器知识">
-<meta property="og:description" content="#####如果 访问  /index/index&amp;amp;t=1 #####没有 按照我们的伪静态规则 #####那么应该 是 MultiViews的问题 需要 改成 -MultiViews">
+<meta property="og:description" content="iis 7.5 加 php7 开启opcache 后服务器会间断性出现 500 错误 ##解決 ###在windows下需要配置opcache.mmap_base = 0x20000000 ; (Windows only) fix OPcache crashes with event id 487 链接地址: https://stackoverflow.com/questions/35908029">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-21T05:25:00.790Z">
+<meta property="og:updated_time" content="2018-09-27T09:58:49.939Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="apache +MultiViews">
-<meta name="twitter:description" content="#####如果 访问  /index/index&amp;amp;t=1 #####没有 按照我们的伪静态规则 #####那么应该 是 MultiViews的问题 需要 改成 -MultiViews">
+<meta name="twitter:title" content="opcache">
+<meta name="twitter:description" content="iis 7.5 加 php7 开启opcache 后服务器会间断性出现 500 错误 ##解決 ###在windows下需要配置opcache.mmap_base = 0x20000000 ; (Windows only) fix OPcache crashes with event id 487 链接地址: https://stackoverflow.com/questions/35908029">
   
   
   
@@ -54,10 +54,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-apache-MultiViews" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="php-opcache" class="article article-type-php" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/learn_server/2018/09/21/apache-MultiViews/" class="article-date">
-  <time datetime="2018-09-21T05:23:20.000Z" itemprop="datePublished">2018-09-21</time>
+    <a href="/learn_server/2018/09/27/opcache/" class="article-date">
+  <time datetime="2018-09-27T09:55:04.000Z" itemprop="datePublished">2018-09-27</time>
 </a>
     
   </div>
@@ -68,7 +68,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      apache +MultiViews
+      opcache
     </h1>
   
 
@@ -76,14 +76,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#####如果 访问  /index/index&amp;t=1</p>
-<p>#####没有 按照我们的伪静态规则</p>
-<p>#####那么应该 是 MultiViews的问题 需要 改成 -MultiViews</p>
+        <p>iis 7.5 加 php7 开启opcache 后<br>服务器会间断性出现 500 错误</p>
+<p>##解決</p>
+<p>###在windows下需要配置<br>opcache.mmap_base = 0x20000000 ; (Windows only) fix OPcache crashes with event id 487</p>
+<p>链接地址: <a href="https://stackoverflow.com/questions/35908029/zend-opcache-issue-windows-server-2012-iis-plesk-php-7" target="_blank" rel="noopener">https://stackoverflow.com/questions/35908029/zend-opcache-issue-windows-server-2012-iis-plesk-php-7</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://aarontong00.github.io/learn_server/2018/09/21/apache-MultiViews/" data-id="cjmkep17n0000e0vgox5ndh2p" class="article-share-link">Share</a>
+      <a data-url="https://aarontong00.github.io/learn_server/2018/09/27/opcache/" data-id="cjmkep18e0001e0vgcrggake9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -92,19 +93,10 @@
     
 <nav id="article-nav">
   
-    <a href="/learn_server/2018/09/27/opcache/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          opcache
-        
-      </div>
-    </a>
   
-  
-    <a href="/learn_server/2018/09/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/learn_server/2018/09/21/apache-MultiViews/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">apache +MultiViews</div>
     </a>
   
 </nav>
